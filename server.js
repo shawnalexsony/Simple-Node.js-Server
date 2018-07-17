@@ -6,17 +6,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   // res.send('<h1>Hello Express!</h1>');
-  res.send({
-    name: 'Andrew',
-    likes: [
-      'Biking',
-      'Cities'
-    ]
-  });
-});
-
-app.get('/about', (req, res) => {
-  res.send('About Page');
+  res.send("Server is Up and Running.");
 });
 
 // /bad - send back json with errorMessage
